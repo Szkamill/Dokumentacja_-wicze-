@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukumentacja aktywności fizycznej</title>
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <!-- <script defer src="other.js"></script> -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div class="slider">
+    <ul class="workouts">
+        <form class="form hidden">
+            <div class="form__row">
+                <label class="form__label">type</label>
+                <input class="form__input form__input--type" placeholder="Rodzaj treningu np.siłownia" type="text" name="text" pattern="[a-z]{1,20}" required  />
+            </div>
+            <div class="form__row">
+                <label class="form__label">Czas</label>
+                <input  class="form__input form__input--duration" placeholder="min" type="number" >
+                
+            </div>
+            <div class="form__row">
+                <label class="form__label">Opis</label>
+                <input  class="form__input form__input--description" placeholder="description" type="text"  name="text" pattern="[a-z]{1,20}" required >
+                
+            </div>
+            <div class="form__row">
+                <label class="form__label"></label>
+                <!-- <input  class="form__input form__input--description" placeholder="description" type="text"> -->
+                
+            </div>
+            <button class="form__btn">OK</button>
+   </form>
+    </ul> 
+ 
+    <p class="copyright">
+        &copy; Copyright by
+        <a
+          class="twitter-link"
+          target="_blank"
+          href=""
+          >Kamil Szelągowski /szoszo12345@gmail.com/</a
+        >. Zrobione z braku pomysłu a lubie cwiczyć lepsze nie będzie.
+      </p>
+    </div>
+  
+
+
+    <div id="map"></div>
+</body>
+</html>
